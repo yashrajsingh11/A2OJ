@@ -14,12 +14,15 @@ int main() {
 
 	for (int i = 1; i < 4; i++) {
         int j = 0;
-        for (j = 0; j < i; j++)
-            if (hoof[i] == hoof[j])
+        for (j = 0; j < i; j++) {
+            if (hoof[i] == hoof[j]) {
                 break;
+            }
+        }
  
-        if (i == j)
+        if (i == j) {
             result = result + 1;
+        }
     }
     
     cout << 4 - result;
